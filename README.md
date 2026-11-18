@@ -5,9 +5,7 @@
 ### 2. Распаковать и открыть в VS Code.
 
 ### 3. Собрать образ, перейдя в терминал:  
-> *docker build -t **my-app** .*
-
-**my-app** - имя образа
+> docker build -t cat-fct .
 
 ### 4. Запуск из терминала:
-> docker run -d -p 8080:8080 **my-app**,  где **my-app** - имя образа из шага №3
+> docker run --rm -d --name my-cat -p 8080:8080 cat-fct
